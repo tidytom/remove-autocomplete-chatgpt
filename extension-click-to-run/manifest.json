@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT: remove autocomplete (click to run)",
+  "version": "1.0",
+  "description": "Removes the ChatGPT autocomplete panel when you click the extension.",
+  "action": {
+    "default_title": "Remove autocomplete"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}

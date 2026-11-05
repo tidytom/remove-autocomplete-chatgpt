@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT: remove autocomplete (automatic)",
+  "version": "1",
+  "description": "Automatically removes the ChatGPT autocomplete suggestion list and the “What’s on the agenda today?” greeting.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": []
+}
